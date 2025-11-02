@@ -1,3 +1,9 @@
+Josefa Rodrigues Nunes
+Josiana Rodrigues da Silva
+Joseane Marli Moreira Coelho
+Tiago da Silva Brito
+Vitor Gabriel de Sousa Oliveira Sales
+
 import java.util.Scanner;
 
 public class AgendaApplication {
@@ -128,3 +134,4 @@ public class AgendaApplication {
         scanner.close();
     }
 }
+
