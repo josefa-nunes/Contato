@@ -1,4 +1,10 @@
-public class App {
+Josefa Rodrigues Nunes
+Josiana Rodrigues da Silva
+Joseane Marli Moreira Coelho
+Tiago da Silva Brito
+Vitor Gabriel de Sousa Oliveira Sales
+    
+    public class App {
     public static void main(String[] args) {
         AgendaManager agenda = new AgendaManager();
 
@@ -28,3 +34,4 @@ public class App {
         }
     }
 }
+
