@@ -13,21 +13,22 @@ public class App {
             agenda.adicionarContato(contato2);
 
             // Listando contatos
-            System.out.println("📒 Contatos cadastrados:");
+            System.out.println(" Contatos cadastrados:");
             for (Contato c : agenda.listarTodosContatos()) {
                 System.out.println(c);
             }
 
             // Buscando contato
-            System.out.println("\n🔍 Buscando contato 'João':");
+            System.out.println("\n Buscando contato 'João':");
             System.out.println(agenda.buscarContato("João"));
 
             // Removendo contato
             agenda.removerContato("Maria");
-            System.out.println("\n✅ Contato 'Maria' removido!");
+            System.out.println("\n Contato 'Maria' removido!");
 
         } catch (ContatoExistenteException | ContatoNaoEncontradoException e) {
             System.out.println("Erro: " + e.getMessage());
         }
     }
 }
+
