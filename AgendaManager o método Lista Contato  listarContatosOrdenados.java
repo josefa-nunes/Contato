@@ -42,18 +42,16 @@ public class AgendaManager implements GerenciadorContatos {
         return contatos;
     }
 
-    // ========================================================
     // MÉTODO 1: listarContatosOrdenados() – ordena alfabeticamente
-    // ========================================================
+    
     public List<Contato> listarContatosOrdenados() {
         return contatos.stream()
                 .sorted(Comparator.comparing(Contato::getNome, String.CASE_INSENSITIVE_ORDER))
                 .collect(Collectors.toList());
     }
 
-    // ========================================================
     // MÉTODO 2: buscarPorDominioEmail(String dominio)
-    // ========================================================
+
     public List<Contato> buscarPorDominioEmail(String dominio) {
         if (dominio == null || dominio.trim().isEmpty()) {
             return new ArrayList<>();
@@ -65,9 +63,8 @@ public class AgendaManager implements GerenciadorContatos {
                 .collect(Collectors.toList());
     }
 
-    // ========================================================
     // MÉTODOS DE CSV (salvar e carregar)
-    // ========================================================
+
     @Override
     public void salvarContatosCSV(String nomeArquivo) {
         try (BufferedWriter writer = new BufferedWriter(new java.io.FileWriter(nomeArquivo))) {
@@ -103,4 +100,5 @@ public class AgendaManager implements GerenciadorContatos {
             System.out.println("Erro ao carregar contatos: " + e.getMessage());
         }
     }
+
 }
