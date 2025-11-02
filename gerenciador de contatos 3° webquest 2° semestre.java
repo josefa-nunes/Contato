@@ -1,4 +1,10 @@
-public class Contato {
+Josefa Rodrigues Nunes
+Josiana Rodrigues da Silva
+Joseane Marli Moreira Coelho
+Tiago da Silva Brito
+Vitor Gabriel de Sousa Oliveira Sales
+    
+  public class Contato {
     // Atributos privados
     private String nome;
     private String telefone;
@@ -50,4 +56,5 @@ public class Contato {
                 ", Email='" + email + '\'' +
                 '}';
     }
+
 }
